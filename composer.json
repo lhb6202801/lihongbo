@@ -1,0 +1,31 @@
+{
+    "name": "wayhood/yii2-app-template",
+    "description": "Yii 2 Application Template",
+    "keywords": ["yii2", "framework", "advanced", "application template"],
+    "homepage": "http://www.yiiframework.com/",
+    "type": "project",
+    "license": "BSD-3-Clause",
+    "support": {
+        "issues": "https://github.com/yiisoft/yii2/issues?state=open",
+        "forum": "http://www.yiiframework.com/forum/",
+        "wiki": "http://www.yiiframework.com/wiki/",
+        "irc": "irc://irc.freenode.net/yii",
+        "source": "https://github.com/yiisoft/yii2"
+    },
+    "require": {
+        "yiisoft/yii2-httpclient": "^2.0",
+        "abei2017/yii2-wx": "^1.1",
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "*",
+        "yiisoft/yii2-bootstrap": "*",
+        "yiisoft/yii2-redis": "*",
+        "yiisoft/yii2-httpclient": "^2.0@dev",
+        "qiniu/php-sdk": "dev-master",
+        "yiidoc/yii2-redactor": "*"
+    },
+    "require-dev": {
+        "yiisoft/yii2-debug": "*",
+        "yiisoft/yii2-gii": "*",
+        "yiisoft/yii2-faker": "*"
+    }
+}

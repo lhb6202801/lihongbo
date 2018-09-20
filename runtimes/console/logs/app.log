@@ -1,0 +1,1028 @@
+2018-09-17 15:56:14 [-][-][-][error][Error] Error: Class 'common\models\Province' not found in /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php:23
+Stack trace:
+#0 [internal function]: console\controllers\CitygetController->actionGetcitystojson()
+#1 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('getcitystojson', Array)
+#4 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('getcitystojson', Array)
+#5 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('cityget/getcity...', Array)
+#6 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('cityget/getcity...', Array)
+#7 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Application.php(379): yii\console\Application->handleRequest(Object(yii\console\Request))
+#8 /Users/apple/Desktop/paimai/scripts/yii(36): yii\base\Application->run()
+#9 {main}
+2018-09-17 15:56:14 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'TERM' => 'xterm-256color'
+    'OLDPWD' => '/users/apple/desktop/paimai'
+    'USER' => 'root'
+    'SUDO_USER' => 'apple'
+    'SUDO_UID' => '501'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.KmazGEHmwk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x0:25:52'
+    'USERNAME' => 'root'
+    'MAIL' => '/var/mail/root'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/apple/Downloads/android-sdk-macosx/tools:/Users/apple/Downloads/android-sdk-macosx/platform-tools'
+    'PWD' => '/users/apple/desktop/paimai/scripts'
+    'LANG' => 'zh_CN.UTF-8'
+    'SHLVL' => '1'
+    'SUDO_COMMAND' => '/bin/sh'
+    'COLORFGBG' => '7;0'
+    'HOME' => '/var/root'
+    'LOGNAME' => 'root'
+    'SUDO_GID' => '20'
+    'COLORTERM' => 'truecolor'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1537170974.516
+    'REQUEST_TIME' => 1537170974
+    'argv' => [
+        0 => './yii'
+        1 => 'cityget/getcitystojson'
+    ]
+    'argc' => 2
+]
+2018-09-17 15:58:14 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: json_decode() expects parameter 1 to be string, array given in /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php:52
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'json_decode() e...', '/Users/apple/De...', 52, Array)
+#1 /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php(52): json_decode(Array, true)
+#2 [internal function]: console\controllers\CitygetController->actionGetcitystojson()
+#3 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('getcitystojson', Array)
+#6 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('getcitystojson', Array)
+#7 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('cityget/getcity...', Array)
+#8 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('cityget/getcity...', Array)
+#9 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Application.php(379): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 /Users/apple/Desktop/paimai/scripts/yii(36): yii\base\Application->run()
+#11 {main}
+2018-09-17 15:58:14 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'TERM' => 'xterm-256color'
+    'OLDPWD' => '/users/apple/desktop/paimai'
+    'USER' => 'root'
+    'SUDO_USER' => 'apple'
+    'SUDO_UID' => '501'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.KmazGEHmwk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x0:25:52'
+    'USERNAME' => 'root'
+    'MAIL' => '/var/mail/root'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/apple/Downloads/android-sdk-macosx/tools:/Users/apple/Downloads/android-sdk-macosx/platform-tools'
+    'PWD' => '/users/apple/desktop/paimai/scripts'
+    'LANG' => 'zh_CN.UTF-8'
+    'SHLVL' => '1'
+    'SUDO_COMMAND' => '/bin/sh'
+    'COLORFGBG' => '7;0'
+    'HOME' => '/var/root'
+    'LOGNAME' => 'root'
+    'SUDO_GID' => '20'
+    'COLORTERM' => 'truecolor'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1537171094.583
+    'REQUEST_TIME' => 1537171094
+    'argv' => [
+        0 => './yii'
+        1 => 'cityget/getcitystojson'
+    ]
+    'argc' => 2
+]
+2018-09-17 15:58:49 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: json_decode() expects parameter 1 to be string, array given in /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php:52
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'json_decode() e...', '/Users/apple/De...', 52, Array)
+#1 /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php(52): json_decode(Array, true)
+#2 [internal function]: console\controllers\CitygetController->actionGetcitystojson()
+#3 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('getcitystojson', Array)
+#6 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('getcitystojson', Array)
+#7 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('cityget/getcity...', Array)
+#8 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('cityget/getcity...', Array)
+#9 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Application.php(379): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 /Users/apple/Desktop/paimai/scripts/yii(36): yii\base\Application->run()
+#11 {main}
+2018-09-17 15:58:49 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'TERM' => 'xterm-256color'
+    'OLDPWD' => '/var/root'
+    'USER' => 'root'
+    'SUDO_USER' => 'apple'
+    'SUDO_UID' => '501'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.KmazGEHmwk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x0:25:52'
+    'USERNAME' => 'root'
+    'MAIL' => '/var/mail/root'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/apple/Downloads/android-sdk-macosx/tools:/Users/apple/Downloads/android-sdk-macosx/platform-tools'
+    'PWD' => '/users/apple/desktop/paimai/scripts'
+    'LANG' => 'zh_CN.UTF-8'
+    'SHLVL' => '1'
+    'SUDO_COMMAND' => '/bin/sh'
+    'COLORFGBG' => '7;0'
+    'HOME' => '/var/root'
+    'LOGNAME' => 'root'
+    'SUDO_GID' => '20'
+    'COLORTERM' => 'truecolor'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1537171129.804
+    'REQUEST_TIME' => 1537171129
+    'argv' => [
+        0 => './yii'
+        1 => 'cityget/getcitystojson'
+    ]
+    'argc' => 2
+]
+2018-09-17 15:59:13 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: json_decode() expects parameter 1 to be string, array given in /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php:53
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'json_decode() e...', '/Users/apple/De...', 53, Array)
+#1 /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php(53): json_decode(Array, true)
+#2 [internal function]: console\controllers\CitygetController->actionGetcitystojson()
+#3 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('getcitystojson', Array)
+#6 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('getcitystojson', Array)
+#7 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('cityget/getcity...', Array)
+#8 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('cityget/getcity...', Array)
+#9 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Application.php(379): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 /Users/apple/Desktop/paimai/scripts/yii(36): yii\base\Application->run()
+#11 {main}
+2018-09-17 15:59:12 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'TERM' => 'xterm-256color'
+    'OLDPWD' => '/var/root'
+    'USER' => 'root'
+    'SUDO_USER' => 'apple'
+    'SUDO_UID' => '501'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.KmazGEHmwk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x0:25:52'
+    'USERNAME' => 'root'
+    'MAIL' => '/var/mail/root'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/apple/Downloads/android-sdk-macosx/tools:/Users/apple/Downloads/android-sdk-macosx/platform-tools'
+    'PWD' => '/users/apple/desktop/paimai/scripts'
+    'LANG' => 'zh_CN.UTF-8'
+    'SHLVL' => '1'
+    'SUDO_COMMAND' => '/bin/sh'
+    'COLORFGBG' => '7;0'
+    'HOME' => '/var/root'
+    'LOGNAME' => 'root'
+    'SUDO_GID' => '20'
+    'COLORTERM' => 'truecolor'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1537171152.8645
+    'REQUEST_TIME' => 1537171152
+    'argv' => [
+        0 => './yii'
+        1 => 'cityget/getcitystojson'
+    ]
+    'argc' => 2
+]
+2018-09-17 15:59:50 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: json_decode() expects parameter 1 to be string, array given in /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php:53
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'json_decode() e...', '/Users/apple/De...', 53, Array)
+#1 /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php(53): json_decode(Array, true)
+#2 [internal function]: console\controllers\CitygetController->actionGetcitystojson()
+#3 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('getcitystojson', Array)
+#6 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('getcitystojson', Array)
+#7 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('cityget/getcity...', Array)
+#8 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('cityget/getcity...', Array)
+#9 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Application.php(379): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 /Users/apple/Desktop/paimai/scripts/yii(36): yii\base\Application->run()
+#11 {main}
+2018-09-17 15:59:50 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'TERM' => 'xterm-256color'
+    'OLDPWD' => '/var/root'
+    'USER' => 'root'
+    'SUDO_USER' => 'apple'
+    'SUDO_UID' => '501'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.KmazGEHmwk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x0:25:52'
+    'USERNAME' => 'root'
+    'MAIL' => '/var/mail/root'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/apple/Downloads/android-sdk-macosx/tools:/Users/apple/Downloads/android-sdk-macosx/platform-tools'
+    'PWD' => '/users/apple/desktop/paimai/scripts'
+    'LANG' => 'zh_CN.UTF-8'
+    'SHLVL' => '1'
+    'SUDO_COMMAND' => '/bin/sh'
+    'COLORFGBG' => '7;0'
+    'HOME' => '/var/root'
+    'LOGNAME' => 'root'
+    'SUDO_GID' => '20'
+    'COLORTERM' => 'truecolor'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1537171190.4652
+    'REQUEST_TIME' => 1537171190
+    'argv' => [
+        0 => './yii'
+        1 => 'cityget/getcitystojson'
+    ]
+    'argc' => 2
+]
+2018-09-17 16:01:20 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: json_decode() expects parameter 1 to be string, array given in /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php:55
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'json_decode() e...', '/Users/apple/De...', 55, Array)
+#1 /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php(55): json_decode(Array, true)
+#2 [internal function]: console\controllers\CitygetController->actionGetcitystojson()
+#3 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('getcitystojson', Array)
+#6 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('getcitystojson', Array)
+#7 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('cityget/getcity...', Array)
+#8 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('cityget/getcity...', Array)
+#9 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Application.php(379): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 /Users/apple/Desktop/paimai/scripts/yii(36): yii\base\Application->run()
+#11 {main}
+2018-09-17 16:01:20 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'TERM' => 'xterm-256color'
+    'OLDPWD' => '/var/root'
+    'USER' => 'root'
+    'SUDO_USER' => 'apple'
+    'SUDO_UID' => '501'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.KmazGEHmwk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x0:25:52'
+    'USERNAME' => 'root'
+    'MAIL' => '/var/mail/root'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/apple/Downloads/android-sdk-macosx/tools:/Users/apple/Downloads/android-sdk-macosx/platform-tools'
+    'PWD' => '/users/apple/desktop/paimai/scripts'
+    'LANG' => 'zh_CN.UTF-8'
+    'SHLVL' => '1'
+    'SUDO_COMMAND' => '/bin/sh'
+    'COLORFGBG' => '7;0'
+    'HOME' => '/var/root'
+    'LOGNAME' => 'root'
+    'SUDO_GID' => '20'
+    'COLORTERM' => 'truecolor'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1537171280.1991
+    'REQUEST_TIME' => 1537171280
+    'argv' => [
+        0 => './yii'
+        1 => 'cityget/getcitystojson'
+    ]
+    'argc' => 2
+]
+2018-09-17 16:02:41 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: json_decode() expects parameter 1 to be string, array given in /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php:57
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'json_decode() e...', '/Users/apple/De...', 57, Array)
+#1 /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php(57): json_decode(Array, true)
+#2 [internal function]: console\controllers\CitygetController->actionGetcitystojson()
+#3 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('getcitystojson', Array)
+#6 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('getcitystojson', Array)
+#7 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('cityget/getcity...', Array)
+#8 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('cityget/getcity...', Array)
+#9 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Application.php(379): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 /Users/apple/Desktop/paimai/scripts/yii(36): yii\base\Application->run()
+#11 {main}
+2018-09-17 16:02:41 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'TERM' => 'xterm-256color'
+    'OLDPWD' => '/var/root'
+    'USER' => 'root'
+    'SUDO_USER' => 'apple'
+    'SUDO_UID' => '501'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.KmazGEHmwk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x0:25:52'
+    'USERNAME' => 'root'
+    'MAIL' => '/var/mail/root'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/apple/Downloads/android-sdk-macosx/tools:/Users/apple/Downloads/android-sdk-macosx/platform-tools'
+    'PWD' => '/users/apple/desktop/paimai/scripts'
+    'LANG' => 'zh_CN.UTF-8'
+    'SHLVL' => '1'
+    'SUDO_COMMAND' => '/bin/sh'
+    'COLORFGBG' => '7;0'
+    'HOME' => '/var/root'
+    'LOGNAME' => 'root'
+    'SUDO_GID' => '20'
+    'COLORTERM' => 'truecolor'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1537171361.577
+    'REQUEST_TIME' => 1537171361
+    'argv' => [
+        0 => './yii'
+        1 => 'cityget/getcitystojson'
+    ]
+    'argc' => 2
+]
+2018-09-17 16:03:20 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: json_decode() expects parameter 1 to be string, array given in /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php:57
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'json_decode() e...', '/Users/apple/De...', 57, Array)
+#1 /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php(57): json_decode(Array, true)
+#2 [internal function]: console\controllers\CitygetController->actionGetcitystojson()
+#3 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('getcitystojson', Array)
+#6 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('getcitystojson', Array)
+#7 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('cityget/getcity...', Array)
+#8 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('cityget/getcity...', Array)
+#9 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Application.php(379): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 /Users/apple/Desktop/paimai/scripts/yii(36): yii\base\Application->run()
+#11 {main}
+2018-09-17 16:03:20 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'TERM' => 'xterm-256color'
+    'OLDPWD' => '/var/root'
+    'USER' => 'root'
+    'SUDO_USER' => 'apple'
+    'SUDO_UID' => '501'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.KmazGEHmwk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x0:25:52'
+    'USERNAME' => 'root'
+    'MAIL' => '/var/mail/root'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/apple/Downloads/android-sdk-macosx/tools:/Users/apple/Downloads/android-sdk-macosx/platform-tools'
+    'PWD' => '/users/apple/desktop/paimai/scripts'
+    'LANG' => 'zh_CN.UTF-8'
+    'SHLVL' => '1'
+    'SUDO_COMMAND' => '/bin/sh'
+    'COLORFGBG' => '7;0'
+    'HOME' => '/var/root'
+    'LOGNAME' => 'root'
+    'SUDO_GID' => '20'
+    'COLORTERM' => 'truecolor'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1537171400.0165
+    'REQUEST_TIME' => 1537171400
+    'argv' => [
+        0 => './yii'
+        1 => 'cityget/getcitystojson'
+    ]
+    'argc' => 2
+]
+2018-09-17 16:04:02 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: json_decode() expects parameter 1 to be string, array given in /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php:56
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'json_decode() e...', '/Users/apple/De...', 56, Array)
+#1 /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php(56): json_decode(Array, true)
+#2 [internal function]: console\controllers\CitygetController->actionGetcitystojson()
+#3 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('getcitystojson', Array)
+#6 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('getcitystojson', Array)
+#7 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('cityget/getcity...', Array)
+#8 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('cityget/getcity...', Array)
+#9 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Application.php(379): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 /Users/apple/Desktop/paimai/scripts/yii(36): yii\base\Application->run()
+#11 {main}
+2018-09-17 16:04:02 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'TERM' => 'xterm-256color'
+    'OLDPWD' => '/var/root'
+    'USER' => 'root'
+    'SUDO_USER' => 'apple'
+    'SUDO_UID' => '501'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.KmazGEHmwk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x0:25:52'
+    'USERNAME' => 'root'
+    'MAIL' => '/var/mail/root'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/apple/Downloads/android-sdk-macosx/tools:/Users/apple/Downloads/android-sdk-macosx/platform-tools'
+    'PWD' => '/users/apple/desktop/paimai/scripts'
+    'LANG' => 'zh_CN.UTF-8'
+    'SHLVL' => '1'
+    'SUDO_COMMAND' => '/bin/sh'
+    'COLORFGBG' => '7;0'
+    'HOME' => '/var/root'
+    'LOGNAME' => 'root'
+    'SUDO_GID' => '20'
+    'COLORTERM' => 'truecolor'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1537171442.771
+    'REQUEST_TIME' => 1537171442
+    'argv' => [
+        0 => './yii'
+        1 => 'cityget/getcitystojson'
+    ]
+    'argc' => 2
+]
+2018-09-17 16:08:32 [-][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\Province::cityID in /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/db/BaseActiveRecord.php(285): yii\base\Component->__get('cityID')
+#1 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Model.php(981): yii\db\BaseActiveRecord->__get('cityID')
+#2 /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php(30): yii\base\Model->offsetGet('cityID')
+#3 [internal function]: console\controllers\CitygetController->actionGetcitystojson()
+#4 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#6 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('getcitystojson', Array)
+#7 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('getcitystojson', Array)
+#8 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('cityget/getcity...', Array)
+#9 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('cityget/getcity...', Array)
+#10 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Application.php(379): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 /Users/apple/Desktop/paimai/scripts/yii(36): yii\base\Application->run()
+#12 {main}
+2018-09-17 16:08:32 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'TERM' => 'xterm-256color'
+    'OLDPWD' => '/var/root'
+    'USER' => 'root'
+    'SUDO_USER' => 'apple'
+    'SUDO_UID' => '501'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.KmazGEHmwk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x0:25:52'
+    'USERNAME' => 'root'
+    'MAIL' => '/var/mail/root'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/apple/Downloads/android-sdk-macosx/tools:/Users/apple/Downloads/android-sdk-macosx/platform-tools'
+    'PWD' => '/users/apple/desktop/paimai/scripts'
+    'LANG' => 'zh_CN.UTF-8'
+    'SHLVL' => '1'
+    'SUDO_COMMAND' => '/bin/sh'
+    'COLORFGBG' => '7;0'
+    'HOME' => '/var/root'
+    'LOGNAME' => 'root'
+    'SUDO_GID' => '20'
+    'COLORTERM' => 'truecolor'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1537171712.1647
+    'REQUEST_TIME' => 1537171712
+    'argv' => [
+        0 => './yii'
+        1 => 'cityget/getcitystojson'
+    ]
+    'argc' => 2
+]
+2018-09-17 16:11:18 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: json_decode() expects parameter 1 to be string, array given in /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php:69
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'json_decode() e...', '/Users/apple/De...', 69, Array)
+#1 /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php(69): json_decode(Array, true)
+#2 [internal function]: console\controllers\CitygetController->actionGetcitystojson()
+#3 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('getcitystojson', Array)
+#6 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('getcitystojson', Array)
+#7 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('cityget/getcity...', Array)
+#8 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('cityget/getcity...', Array)
+#9 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Application.php(379): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 /Users/apple/Desktop/paimai/scripts/yii(36): yii\base\Application->run()
+#11 {main}
+2018-09-17 16:11:18 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'TERM' => 'xterm-256color'
+    'OLDPWD' => '/var/root'
+    'USER' => 'root'
+    'SUDO_USER' => 'apple'
+    'SUDO_UID' => '501'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.KmazGEHmwk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x0:25:52'
+    'USERNAME' => 'root'
+    'MAIL' => '/var/mail/root'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/apple/Downloads/android-sdk-macosx/tools:/Users/apple/Downloads/android-sdk-macosx/platform-tools'
+    'PWD' => '/users/apple/desktop/paimai/scripts'
+    'LANG' => 'zh_CN.UTF-8'
+    'SHLVL' => '1'
+    'SUDO_COMMAND' => '/bin/sh'
+    'COLORFGBG' => '7;0'
+    'HOME' => '/var/root'
+    'LOGNAME' => 'root'
+    'SUDO_GID' => '20'
+    'COLORTERM' => 'truecolor'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1537171878.6401
+    'REQUEST_TIME' => 1537171878
+    'argv' => [
+        0 => './yii'
+        1 => 'cityget/getcitystojson'
+    ]
+    'argc' => 2
+]
+2018-09-17 16:12:05 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: json_decode() expects parameter 1 to be string, array given in /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php:68
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'json_decode() e...', '/Users/apple/De...', 68, Array)
+#1 /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php(68): json_decode(Array, true)
+#2 [internal function]: console\controllers\CitygetController->actionGetcitystojson()
+#3 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('getcitystojson', Array)
+#6 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('getcitystojson', Array)
+#7 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('cityget/getcity...', Array)
+#8 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('cityget/getcity...', Array)
+#9 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Application.php(379): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 /Users/apple/Desktop/paimai/scripts/yii(36): yii\base\Application->run()
+#11 {main}
+2018-09-17 16:12:05 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'TERM' => 'xterm-256color'
+    'OLDPWD' => '/var/root'
+    'USER' => 'root'
+    'SUDO_USER' => 'apple'
+    'SUDO_UID' => '501'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.KmazGEHmwk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x0:25:52'
+    'USERNAME' => 'root'
+    'MAIL' => '/var/mail/root'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/apple/Downloads/android-sdk-macosx/tools:/Users/apple/Downloads/android-sdk-macosx/platform-tools'
+    'PWD' => '/users/apple/desktop/paimai/scripts'
+    'LANG' => 'zh_CN.UTF-8'
+    'SHLVL' => '1'
+    'SUDO_COMMAND' => '/bin/sh'
+    'COLORFGBG' => '7;0'
+    'HOME' => '/var/root'
+    'LOGNAME' => 'root'
+    'SUDO_GID' => '20'
+    'COLORTERM' => 'truecolor'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1537171925.4535
+    'REQUEST_TIME' => 1537171925
+    'argv' => [
+        0 => './yii'
+        1 => 'cityget/getcitystojson'
+    ]
+    'argc' => 2
+]
+2018-09-17 16:12:37 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: json_decode() expects parameter 1 to be string, array given in /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php:69
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'json_decode() e...', '/Users/apple/De...', 69, Array)
+#1 /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php(69): json_decode(Array, true)
+#2 [internal function]: console\controllers\CitygetController->actionGetcitystojson()
+#3 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('getcitystojson', Array)
+#6 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('getcitystojson', Array)
+#7 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('cityget/getcity...', Array)
+#8 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('cityget/getcity...', Array)
+#9 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Application.php(379): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 /Users/apple/Desktop/paimai/scripts/yii(36): yii\base\Application->run()
+#11 {main}
+2018-09-17 16:12:37 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'TERM' => 'xterm-256color'
+    'OLDPWD' => '/var/root'
+    'USER' => 'root'
+    'SUDO_USER' => 'apple'
+    'SUDO_UID' => '501'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.KmazGEHmwk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x0:25:52'
+    'USERNAME' => 'root'
+    'MAIL' => '/var/mail/root'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/apple/Downloads/android-sdk-macosx/tools:/Users/apple/Downloads/android-sdk-macosx/platform-tools'
+    'PWD' => '/users/apple/desktop/paimai/scripts'
+    'LANG' => 'zh_CN.UTF-8'
+    'SHLVL' => '1'
+    'SUDO_COMMAND' => '/bin/sh'
+    'COLORFGBG' => '7;0'
+    'HOME' => '/var/root'
+    'LOGNAME' => 'root'
+    'SUDO_GID' => '20'
+    'COLORTERM' => 'truecolor'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1537171957.5217
+    'REQUEST_TIME' => 1537171957
+    'argv' => [
+        0 => './yii'
+        1 => 'cityget/getcitystojson'
+    ]
+    'argc' => 2
+]
+2018-09-17 16:13:18 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: json_decode() expects parameter 1 to be string, array given in /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php:68
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'json_decode() e...', '/Users/apple/De...', 68, Array)
+#1 /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php(68): json_decode(Array, true)
+#2 [internal function]: console\controllers\CitygetController->actionGetcitystojson()
+#3 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('getcitystojson', Array)
+#6 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('getcitystojson', Array)
+#7 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('cityget/getcity...', Array)
+#8 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('cityget/getcity...', Array)
+#9 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Application.php(379): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 /Users/apple/Desktop/paimai/scripts/yii(36): yii\base\Application->run()
+#11 {main}
+2018-09-17 16:13:18 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'TERM' => 'xterm-256color'
+    'OLDPWD' => '/var/root'
+    'USER' => 'root'
+    'SUDO_USER' => 'apple'
+    'SUDO_UID' => '501'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.KmazGEHmwk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x0:25:52'
+    'USERNAME' => 'root'
+    'MAIL' => '/var/mail/root'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/apple/Downloads/android-sdk-macosx/tools:/Users/apple/Downloads/android-sdk-macosx/platform-tools'
+    'PWD' => '/users/apple/desktop/paimai/scripts'
+    'LANG' => 'zh_CN.UTF-8'
+    'SHLVL' => '1'
+    'SUDO_COMMAND' => '/bin/sh'
+    'COLORFGBG' => '7;0'
+    'HOME' => '/var/root'
+    'LOGNAME' => 'root'
+    'SUDO_GID' => '20'
+    'COLORTERM' => 'truecolor'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1537171998.1326
+    'REQUEST_TIME' => 1537171998
+    'argv' => [
+        0 => './yii'
+        1 => 'cityget/getcitystojson'
+    ]
+    'argc' => 2
+]
+2018-09-17 16:13:36 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: json_decode() expects parameter 1 to be string, array given in /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php:68
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'json_decode() e...', '/Users/apple/De...', 68, Array)
+#1 /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php(68): json_decode(Array, true)
+#2 [internal function]: console\controllers\CitygetController->actionGetcitystojson()
+#3 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('getcitystojson', Array)
+#6 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('getcitystojson', Array)
+#7 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('cityget/getcity...', Array)
+#8 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('cityget/getcity...', Array)
+#9 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Application.php(379): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 /Users/apple/Desktop/paimai/scripts/yii(36): yii\base\Application->run()
+#11 {main}
+2018-09-17 16:13:36 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'TERM' => 'xterm-256color'
+    'OLDPWD' => '/var/root'
+    'USER' => 'root'
+    'SUDO_USER' => 'apple'
+    'SUDO_UID' => '501'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.KmazGEHmwk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x0:25:52'
+    'USERNAME' => 'root'
+    'MAIL' => '/var/mail/root'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/apple/Downloads/android-sdk-macosx/tools:/Users/apple/Downloads/android-sdk-macosx/platform-tools'
+    'PWD' => '/users/apple/desktop/paimai/scripts'
+    'LANG' => 'zh_CN.UTF-8'
+    'SHLVL' => '1'
+    'SUDO_COMMAND' => '/bin/sh'
+    'COLORFGBG' => '7;0'
+    'HOME' => '/var/root'
+    'LOGNAME' => 'root'
+    'SUDO_GID' => '20'
+    'COLORTERM' => 'truecolor'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1537172016.7472
+    'REQUEST_TIME' => 1537172016
+    'argv' => [
+        0 => './yii'
+        1 => 'cityget/getcitystojson'
+    ]
+    'argc' => 2
+]
+2018-09-17 16:13:58 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: json_decode() expects parameter 1 to be string, array given in /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php:68
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'json_decode() e...', '/Users/apple/De...', 68, Array)
+#1 /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php(68): json_decode(Array, true)
+#2 [internal function]: console\controllers\CitygetController->actionGetcitystojson()
+#3 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('getcitystojson', Array)
+#6 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('getcitystojson', Array)
+#7 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('cityget/getcity...', Array)
+#8 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('cityget/getcity...', Array)
+#9 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Application.php(379): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 /Users/apple/Desktop/paimai/scripts/yii(36): yii\base\Application->run()
+#11 {main}
+2018-09-17 16:13:58 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'TERM' => 'xterm-256color'
+    'OLDPWD' => '/var/root'
+    'USER' => 'root'
+    'SUDO_USER' => 'apple'
+    'SUDO_UID' => '501'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.KmazGEHmwk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x0:25:52'
+    'USERNAME' => 'root'
+    'MAIL' => '/var/mail/root'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/apple/Downloads/android-sdk-macosx/tools:/Users/apple/Downloads/android-sdk-macosx/platform-tools'
+    'PWD' => '/users/apple/desktop/paimai/scripts'
+    'LANG' => 'zh_CN.UTF-8'
+    'SHLVL' => '1'
+    'SUDO_COMMAND' => '/bin/sh'
+    'COLORFGBG' => '7;0'
+    'HOME' => '/var/root'
+    'LOGNAME' => 'root'
+    'SUDO_GID' => '20'
+    'COLORTERM' => 'truecolor'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1537172038.4031
+    'REQUEST_TIME' => 1537172038
+    'argv' => [
+        0 => './yii'
+        1 => 'cityget/getcitystojson'
+    ]
+    'argc' => 2
+]
+2018-09-17 16:14:52 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: json_decode() expects parameter 1 to be string, array given in /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php:68
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'json_decode() e...', '/Users/apple/De...', 68, Array)
+#1 /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php(68): json_decode(Array, true)
+#2 [internal function]: console\controllers\CitygetController->actionGetcitystojson()
+#3 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('getcitystojson', Array)
+#6 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('getcitystojson', Array)
+#7 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('cityget/getcity...', Array)
+#8 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('cityget/getcity...', Array)
+#9 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Application.php(379): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 /Users/apple/Desktop/paimai/scripts/yii(36): yii\base\Application->run()
+#11 {main}
+2018-09-17 16:14:52 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'TERM' => 'xterm-256color'
+    'OLDPWD' => '/var/root'
+    'USER' => 'root'
+    'SUDO_USER' => 'apple'
+    'SUDO_UID' => '501'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.KmazGEHmwk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x0:25:52'
+    'USERNAME' => 'root'
+    'MAIL' => '/var/mail/root'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/apple/Downloads/android-sdk-macosx/tools:/Users/apple/Downloads/android-sdk-macosx/platform-tools'
+    'PWD' => '/users/apple/desktop/paimai/scripts'
+    'LANG' => 'zh_CN.UTF-8'
+    'SHLVL' => '1'
+    'SUDO_COMMAND' => '/bin/sh'
+    'COLORFGBG' => '7;0'
+    'HOME' => '/var/root'
+    'LOGNAME' => 'root'
+    'SUDO_GID' => '20'
+    'COLORTERM' => 'truecolor'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1537172092.6599
+    'REQUEST_TIME' => 1537172092
+    'argv' => [
+        0 => './yii'
+        1 => 'cityget/getcitystojson'
+    ]
+    'argc' => 2
+]
+2018-09-17 16:15:36 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: json_decode() expects parameter 1 to be string, array given in /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php:68
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'json_decode() e...', '/Users/apple/De...', 68, Array)
+#1 /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php(68): json_decode(Array, true)
+#2 [internal function]: console\controllers\CitygetController->actionGetcitystojson()
+#3 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('getcitystojson', Array)
+#6 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('getcitystojson', Array)
+#7 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('cityget/getcity...', Array)
+#8 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('cityget/getcity...', Array)
+#9 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Application.php(379): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 /Users/apple/Desktop/paimai/scripts/yii(36): yii\base\Application->run()
+#11 {main}
+2018-09-17 16:15:36 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'TERM' => 'xterm-256color'
+    'OLDPWD' => '/var/root'
+    'USER' => 'root'
+    'SUDO_USER' => 'apple'
+    'SUDO_UID' => '501'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.KmazGEHmwk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x0:25:52'
+    'USERNAME' => 'root'
+    'MAIL' => '/var/mail/root'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/apple/Downloads/android-sdk-macosx/tools:/Users/apple/Downloads/android-sdk-macosx/platform-tools'
+    'PWD' => '/users/apple/desktop/paimai/scripts'
+    'LANG' => 'zh_CN.UTF-8'
+    'SHLVL' => '1'
+    'SUDO_COMMAND' => '/bin/sh'
+    'COLORFGBG' => '7;0'
+    'HOME' => '/var/root'
+    'LOGNAME' => 'root'
+    'SUDO_GID' => '20'
+    'COLORTERM' => 'truecolor'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1537172136.3858
+    'REQUEST_TIME' => 1537172136
+    'argv' => [
+        0 => './yii'
+        1 => 'cityget/getcitystojson'
+    ]
+    'argc' => 2
+]
+2018-09-17 16:16:04 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: json_decode() expects parameter 1 to be string, array given in /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php:68
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'json_decode() e...', '/Users/apple/De...', 68, Array)
+#1 /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php(68): json_decode(Array, true)
+#2 [internal function]: console\controllers\CitygetController->actionGetcitystojson()
+#3 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('getcitystojson', Array)
+#6 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('getcitystojson', Array)
+#7 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('cityget/getcity...', Array)
+#8 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('cityget/getcity...', Array)
+#9 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Application.php(379): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 /Users/apple/Desktop/paimai/scripts/yii(36): yii\base\Application->run()
+#11 {main}
+2018-09-17 16:16:04 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'TERM' => 'xterm-256color'
+    'OLDPWD' => '/var/root'
+    'USER' => 'root'
+    'SUDO_USER' => 'apple'
+    'SUDO_UID' => '501'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.KmazGEHmwk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x0:25:52'
+    'USERNAME' => 'root'
+    'MAIL' => '/var/mail/root'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/apple/Downloads/android-sdk-macosx/tools:/Users/apple/Downloads/android-sdk-macosx/platform-tools'
+    'PWD' => '/users/apple/desktop/paimai/scripts'
+    'LANG' => 'zh_CN.UTF-8'
+    'SHLVL' => '1'
+    'SUDO_COMMAND' => '/bin/sh'
+    'COLORFGBG' => '7;0'
+    'HOME' => '/var/root'
+    'LOGNAME' => 'root'
+    'SUDO_GID' => '20'
+    'COLORTERM' => 'truecolor'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1537172164.9265
+    'REQUEST_TIME' => 1537172164
+    'argv' => [
+        0 => './yii'
+        1 => 'cityget/getcitystojson'
+    ]
+    'argc' => 2
+]
+2018-09-17 16:16:34 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: json_decode() expects parameter 1 to be string, array given in /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php:68
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'json_decode() e...', '/Users/apple/De...', 68, Array)
+#1 /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php(68): json_decode(Array, true)
+#2 [internal function]: console\controllers\CitygetController->actionGetcitystojson()
+#3 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('getcitystojson', Array)
+#6 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('getcitystojson', Array)
+#7 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('cityget/getcity...', Array)
+#8 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('cityget/getcity...', Array)
+#9 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Application.php(379): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 /Users/apple/Desktop/paimai/scripts/yii(36): yii\base\Application->run()
+#11 {main}
+2018-09-17 16:16:34 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'TERM' => 'xterm-256color'
+    'OLDPWD' => '/var/root'
+    'USER' => 'root'
+    'SUDO_USER' => 'apple'
+    'SUDO_UID' => '501'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.KmazGEHmwk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x0:25:52'
+    'USERNAME' => 'root'
+    'MAIL' => '/var/mail/root'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/apple/Downloads/android-sdk-macosx/tools:/Users/apple/Downloads/android-sdk-macosx/platform-tools'
+    'PWD' => '/users/apple/desktop/paimai/scripts'
+    'LANG' => 'zh_CN.UTF-8'
+    'SHLVL' => '1'
+    'SUDO_COMMAND' => '/bin/sh'
+    'COLORFGBG' => '7;0'
+    'HOME' => '/var/root'
+    'LOGNAME' => 'root'
+    'SUDO_GID' => '20'
+    'COLORTERM' => 'truecolor'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1537172194.5267
+    'REQUEST_TIME' => 1537172194
+    'argv' => [
+        0 => './yii'
+        1 => 'cityget/getcitystojson'
+    ]
+    'argc' => 2
+]
+2018-09-17 16:17:19 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: json_decode() expects parameter 1 to be string, array given in /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php:66
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'json_decode() e...', '/Users/apple/De...', 66, Array)
+#1 /Users/apple/Desktop/paimai/apps/console/controllers/CitygetController.php(66): json_decode(Array, true)
+#2 [internal function]: console\controllers\CitygetController->actionGetcitystojson()
+#3 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('getcitystojson', Array)
+#6 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('getcitystojson', Array)
+#7 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('cityget/getcity...', Array)
+#8 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('cityget/getcity...', Array)
+#9 /Users/apple/Desktop/paimai/vendor/yiisoft/yii2/base/Application.php(379): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 /Users/apple/Desktop/paimai/scripts/yii(36): yii\base\Application->run()
+#11 {main}
+2018-09-17 16:17:19 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'TERM' => 'xterm-256color'
+    'OLDPWD' => '/var/root'
+    'USER' => 'root'
+    'SUDO_USER' => 'apple'
+    'SUDO_UID' => '501'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.KmazGEHmwk/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x0:25:52'
+    'USERNAME' => 'root'
+    'MAIL' => '/var/mail/root'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/apple/Downloads/android-sdk-macosx/tools:/Users/apple/Downloads/android-sdk-macosx/platform-tools'
+    'PWD' => '/users/apple/desktop/paimai/scripts'
+    'LANG' => 'zh_CN.UTF-8'
+    'SHLVL' => '1'
+    'SUDO_COMMAND' => '/bin/sh'
+    'COLORFGBG' => '7;0'
+    'HOME' => '/var/root'
+    'LOGNAME' => 'root'
+    'SUDO_GID' => '20'
+    'COLORTERM' => 'truecolor'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1537172239.8757
+    'REQUEST_TIME' => 1537172239
+    'argv' => [
+        0 => './yii'
+        1 => 'cityget/getcitystojson'
+    ]
+    'argc' => 2
+]

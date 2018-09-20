@@ -1,0 +1,37 @@
+#!/usr/bin/env php
+<?php
+/**
+ * Yii console bootstrap file.
+ *
+ * @link http://www.yiiframework.com/
+ * @copyright Copyright (c) 2008 Yii Software LLC
+ * @license http://www.yiiframework.com/license/
+ */
+
+defined('YII_DEBUG') or define('YII_DEBUG', false);
+defined('YII_ENV') or define('YII_ENV', 'prod');
+
+// fcgi doesn't have STDIN and STDOUT defined by default
+defined('STDIN') or define('STDIN', fopen('php://stdin', 'r'));
+defined('STDOUT') or define('STDOUT', fopen('php://stdout', 'w'));
+
+defined('VENDOR_DIR') or define('VENDOR_DIR', __DIR__ . '/../vendor');
+defined('TESTS_DIR') or define('TESTS_DIR', __DIR__ . '/../tests');
+defined('APPS_DIR') or define('APPS_DIR', __DIR__ . '/../apps');
+defined('ROOT_DIR') or define('ROOT_DIR', __DIR__ . '/..');
+
+require(VENDOR_DIR .'/autoload.php');
+require(VENDOR_DIR .'/yiisoft/yii2/Yii.php');
+require(APPS_DIR .'/common/config/bootstrap.php');
+require(APPS_DIR .'/console/config/bootstrap.php');
+
+$config = yii\helpers\ArrayHelper::merge(
+    require(APPS_DIR . '/common/config/main.php'),
+    require(APPS_DIR . '/common/config/main-local.php'),
+    require(APPS_DIR . '/console/config/main.php'),
+    require(APPS_DIR . '/console/config/main-local.php')
+);
+
+$application = new yii\console\Application($config);
+$exitCode = $application->run();
+exit($exitCode);
