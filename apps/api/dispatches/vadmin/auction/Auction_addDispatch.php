@@ -3,7 +3,7 @@ namespace api\dispatches\vadmin\auction;
 
 use api\base\Dispatch;
 
-use common\models\Auction_image;
+use common\models\AuctionImage;
 use common\models\Auction;
 use common\models\Notes;
 use common\models\Notice;
@@ -58,7 +58,7 @@ class Auction_addDispatch extends Dispatch
         $auction->notesId = $notes->id;
         if($auction->save(false)){
             //拍卖会图片
-            $images = new Auction_image();
+            $images = new AuctionImage();
             $images->images = $params['images'][0];
             $images->auctionId = $auction->id;
             $images->save(false);

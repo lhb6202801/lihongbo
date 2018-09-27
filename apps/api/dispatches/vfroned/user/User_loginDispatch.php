@@ -3,8 +3,13 @@ namespace api\dispatches\vfroned\user;
 
 use api\base\Dispatch;
 use abei2017\wx\Application;
+use common\models\Auction;
+use common\models\Teacher;
 use common\models\Wx;
 use api\helpers\ApiHelper;
+use common\models\AuctionInviter;
+use common\models\CompanyWx;
+
 use Yii;
 
 
@@ -74,9 +79,88 @@ class User_loginDispatch extends Dispatch
         $salertoken->avatar = $userinfo->avatar = $avatarurl;
         $salertoken->access_token = Yii::$app->security->generateRandomString();
         $salertoken->insert();
+
+        //身份处理
+        //竞拍者 - 拍卖师 - 围观人 - 委托人
+        $identity = $params['iy'];
+        $identityid = $params['yid'];
+        if(isset($identity)){
+            if($identity == 'tr'){
+                //拍卖师  teacher
+                //拍卖师ID $identityid
+                //关联拍卖师
+                $teacher = Teacher::find()->where(['id'=>$identityid])->one();
+                $teacher->wx_id = $userinfo->id;
+                $teacher->save(false);
+            }else if($identity == 'br'){
+                //竞拍者 bidders
+                //拍卖会ID $identityid
+                //查询 企业ID
+                $auction = Auction::find()->where(['id'=>$identityid])->one();
+                if(is_null($auction)){
+                    return $this->errorReturn(1011);
+                }
+                // 1 绑定 企业邀请微信关系表
+                $companywx = new CompanyWx();
+                $companywx->companyId = $auction->companyId;
+                $companywx->wxId = $userinfo->id;
+                $companywx->created_at = time();
+                $companywx->save(false);
+                // 2 绑定 拍卖会邀请表
+                $auctioninviter = new AuctionInviter();
+                $auctioninviter->companyId = $auction->companyId;
+                $auctioninviter->wxId = $userinfo->id;
+                $auctioninviter->auctionId = $auction->id;
+                $auctioninviter->type = 0;
+                $auctioninviter->auctionNumber = substr(strval(time()), -6);
+            }else if($identity == 'or'){
+                //围观者 onlookers
+                //拍卖会ID $identityid
+                //查询 企业ID
+                $auction = Auction::find()->where(['id'=>$identityid])->one();
+                if(is_null($auction)){
+                    return $this->errorReturn(1011);
+                }
+                // 1 绑定 企业邀请微信关系表
+                $companywx = new CompanyWx();
+                $companywx->companyId = $auction->companyId;
+                $companywx->wxId = $userinfo->id;
+                $companywx->created_at = time();
+                $companywx->save(false);
+                // 2 绑定 拍卖会邀请表
+                $auctioninviter = new AuctionInviter();
+                $auctioninviter->companyId = $auction->companyId;
+                $auctioninviter->wxId = $userinfo->id;
+                $auctioninviter->auctionId = $auction->id;
+                $auctioninviter->type = 1;
+                $auctioninviter->auctionNumber = substr(strval(time()), -6);
+            }else if($identity == 'ct'){
+                //委托人 client
+                //拍卖会ID $identityid
+                //查询 企业ID
+                $auction = Auction::find()->where(['id'=>$identityid])->one();
+                if(is_null($auction)){
+                    return $this->errorReturn(1011);
+                }
+                // 1 绑定 企业邀请微信关系表
+                $companywx = new CompanyWx();
+                $companywx->companyId = $auction->companyId;
+                $companywx->wxId = $userinfo->id;
+                $companywx->created_at = time();
+                $companywx->save(false);
+                // 2 绑定 拍卖会邀请表
+                $auctioninviter = new AuctionInviter();
+                $auctioninviter->companyId = $auction->companyId;
+                $auctioninviter->wxId = $userinfo->id;
+                $auctioninviter->auctionId = $auction->id;
+                $auctioninviter->type = 2;
+                $auctioninviter->auctionNumber = substr(strval(time()), -6);
+            }
+        }
         return $this->successReturn([
             //'userinfo' => $userinfo,
-            'token' =>$salertoken->access_token
+            'token' =>$salertoken->access_token,
+            'iy'=>$identity
         ]);
     }
 }

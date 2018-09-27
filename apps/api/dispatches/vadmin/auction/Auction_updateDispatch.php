@@ -3,7 +3,7 @@ namespace api\dispatches\vadmin\auction;
 
 use api\base\Dispatch;
 
-use common\models\Auction_image;
+use common\models\AuctionImage;
 use common\models\Auction;
 use common\models\Notes;
 use common\models\Notice;
@@ -62,11 +62,11 @@ class Auction_updateDispatch extends Dispatch
         }
         if($auction->save(false)){
             //拍卖会图片
-            $images = Auction_image::find()->where(['auctionId'=>$params['id']])->one();
+            $images = AuctionImage::find()->where(['auctionId'=>$params['id']])->one();
             if(!is_null($images)){
                 $images->delete();
             }
-            $images = new Auction_image();
+            $images = new AuctionImage();
             $images->images = $params['images'][0];
             $images->auctionId = $auction->id;
             $images->save(false);
