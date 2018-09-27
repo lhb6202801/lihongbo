@@ -14,9 +14,6 @@ return [
     'defaultRoute' => 'rest',
     'bootstrap' => ['log'],
     'modules' => [],
-    'aliases' => [
-        'abei2017/wx'   => '@api/ect/yii2-wx-1.2/src'
-    ],
     'components' => [
         'user' => [
             'identityClass' => 'common\models\User',

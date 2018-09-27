@@ -27,7 +27,7 @@ class ConfigApi_addDispatch extends Dispatch
 {
     public function run()
     {
-        $path = dirname(dirname(__FILE__));
+        $path = dirname(dirname(dirname(__FILE__)));
         $fileslist = CommonHelper::ScanFile($path);
         $columnarray = ['dispatch', 'class', 'version', 'allowed', 'token', 'description', 'request_eg', 'response_eg', 'response_error_eg', 'detail', 'type','created_at'];
         $value = [];

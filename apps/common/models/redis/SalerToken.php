@@ -13,18 +13,14 @@ class SalerToken extends \common\components\RedisActiveRecord
     {
         return [
             'id',
-            'saler_id',
-            'wx_id',
+            'nickname',
+            'session_key',
             'sex' ,
             'state',
             'avatar',
             'nickname',
             'access_token',
-            'expires_in',
-            'refresh_token',
-            'create_at',
-            'agency_id',
-            'level'
+            'created_at'
         ];
     }
 }
