@@ -62,6 +62,28 @@ class CommonHelper
         return $str;
 
     }
+    /**
+     * 获取用户身份
+     */
+    public function getAuctionType($vtype)
+    {
+        switch ($vtype){
+            case 0:
+                $vtype = 'br';
+                break;
+            case 1:
+                $vtype = 'or';
+                break;
+            case 2:
+                $vtype = 'ct';
+                break;
+            case 3:
+                $vtype = 'tr';
+                break;
+        }
+        return $vtype;
+
+    }
 }
 
 

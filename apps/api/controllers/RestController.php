@@ -106,8 +106,8 @@ class RestController extends \yii\web\Controller
 
 
             if (isset($request['version']) && in_array($request['version'], $allowedVersions)) {
-                $versionName = 'v' . intval($request['version']);
-                $version = intval($request['version']);
+                $versionName = 'v'.$request['version'];
+                $version = $request['version'];
             } else {
                 $this->systemExceptionReturn(8000, '版本有误', $dispatch); //版本有误
                 continue;

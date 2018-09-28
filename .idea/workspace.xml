@@ -2,67 +2,91 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63f13185-44be-419a-8695-b93128cc0989" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/api/dispatches/vadmin/auction/Auction_viewDispatch.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/dispatches/vadmin/teacher/Teacher_qrcodeDispatch.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/common/models/AuctionInviter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/common/models/CompanyWx.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/dispatches/vadmin/auction/Auction_peoplelistDispatch.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/dispatches/vadmin/product/Product_addDispatch.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/dispatches/vadmin/product/Product_delDispatch.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/dispatches/vadmin/product/Product_listDispatch.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/dispatches/vadmin/product/Product_updateDispatch.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/dispatches/vadmin/product/Product_viewDispatch.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/dispatches/vfroned/auction/Auction_getlistforvDispatch.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/dispatches/vfroned/bind/Bind_userDispatch.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/dispatches/vfroned/phonecode/Phonecode_getcodeDispatch.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/common/models/AuctionProduct.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/common/models/InviterSeting.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/common/models/ProductImages.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/common/models/redis/QrCodeStr.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/api/controllers/RestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/controllers/RestController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/api/dispatches/vadmin/auction/Auction_addDispatch.php" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/dispatches/vadmin/auction/Auction_addDispatch.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/api/dispatches/vadmin/auction/Auction_updateDispatch.php" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/dispatches/vadmin/auction/Auction_updateDispatch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/api/dispatches/vadmin/teacher/Teacher_qrcodeDispatch.php" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/dispatches/vadmin/teacher/Teacher_qrcodeDispatch.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/api/dispatches/vfroned/user/User_loginDispatch.php" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/dispatches/vfroned/user/User_loginDispatch.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/common/models/Auction_image.php" beforeDir="false" afterPath="$PROJECT_DIR$/apps/common/models/AuctionImage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab546ba40a7.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab5484b99f1.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab5487b14b6.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab54a447e36.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab54da5992a.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab54ef97c82.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab54fd77d39.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab5512b6825.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab554fb9a3e.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab555aa7c37.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab559ef0d4f.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab559f13440.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab55ad363b6.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab55e91273b.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab560fb07fc.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab5668b62a8.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab5670d077e.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab56785aaa5.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab56be14bf0.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab57080a667.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab5710b4f57.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab572c304f6.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab573bb7311.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab574352441.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab576436079.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab5767d7cf1.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab5769eb65e.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab576a05047.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab577429d3f.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab579e3b6d1.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab57a78c832.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab57b4288b7.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab57b603fb5.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab57b612cec.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab57bacaa51.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab57c249dbf.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab57c55b8c5.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab57d8d4f02.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab57db46367.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab57db5a9c4.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bab57dd6b4f2.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac2d3147522.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac2d429dd8f.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac2d4acc2df.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac2d4ae219e.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac2d4f3aa57.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac2d4f49d53.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac2d6556332.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac2d672fdc6.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac2d69ed1ff.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/api/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/common/helpers/CommonHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/apps/common/helpers/CommonHelper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/common/models/redis/SalerToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/apps/common/models/redis/SalerToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac70bbcf9d7.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac70c6ea68a.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac710232a01.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac710240351.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac7117eba19.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac71a80aea0.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac71aa2444a.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac71f8f2d19.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac71f92c21b.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac7202324cb.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac72024041e.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac729b9ceb9.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac729bc1a86.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac72cbe1ce8.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac72cbefd85.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac72d4e8eba.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac72d502632.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac72f721507.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac72f72f83a.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac7312101b1.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac7320c57eb.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac732c1583b.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac732c23834.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac73330871f.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac73c452ec4.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac73d81bed3.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac7d633231a.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac7d77cb2da.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac7dbb50aef.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac81345522e.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac8134760cd.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac8150b5b98.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac8150d43a8.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac81cacb6d2.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac81caf34ec.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac81d1c2582.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac81d1d11e0.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac8245aa1f3.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac8245dabd1.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac825c6897c.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac825c76a76.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac82d645ab8.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac82d66c299.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac82d8bfd15.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac844b286ba.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac84598bf80.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac84599a1e4.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac845f4dcc0.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac84dd6585e.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac84dd80000.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac84e07a7ee.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac8538e2c7b.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac8625d977b.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac86523ec95.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac86c88b70b.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac87bbb8866.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac88bd416ca.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac88c2086f3.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac88c219b30.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/api/debug/5bac88c2eb2c8.data" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/runtimes/api/debug/index.data" beforeDir="false" afterPath="$PROJECT_DIR$/runtimes/api/debug/index.data" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runtimes/api/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/runtimes/api/logs/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtimes/common/cache/default/d0/d0555fda26dc5c8dbb6211d3fd3776db.bin" beforeDir="false" afterPath="$PROJECT_DIR$/runtimes/common/cache/default/d0/d0555fda26dc5c8dbb6211d3fd3776db.bin" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,24 +107,24 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="php" value="72" />
+          <entry key="php" value="142" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="72" />
+          <entry key="PHP" value="142" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="4" />
-          <entry key="php" value="4372" />
+          <entry key="dummy" value="15" />
+          <entry key="php" value="7949" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="4372" />
-          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="PHP" value="7949" />
+          <entry key="PLAIN_TEXT" value="15" />
         </counts>
       </usages-collector>
     </session>
@@ -108,12 +132,97 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/auction/Auction_bindDispatch.php">
+        <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vfroned/user/User_loginDispatch.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+            <state relative-caret-position="-896">
+              <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+              <folding>
+                <element signature="e#46#68#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vfroned/auction/Auction_getlistforvDispatch.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
+              <folding>
+                <element signature="e#49#71#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/auction/Auction_updateDispatch.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="68" column="41" selection-start-line="68" selection-start-column="41" selection-end-line="68" selection-end-column="41" />
               <folding>
                 <element signature="e#48#70#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/auction/Auction_bindDispatch.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+              <folding>
+                <element signature="e#48#70#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/teacher/Teacher_qrcodeDispatch.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="615">
+              <caret line="41" column="46" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
+              <folding>
+                <element signature="e#48#70#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/teacher/Teacher_listDispatch.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+              <folding>
+                <element signature="e#48#70#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/auction/Auction_addDispatch.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="362">
+              <caret line="49" column="27" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="27" />
+              <folding>
+                <element signature="e#48#70#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/auction/Auction_peoplelistDispatch.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="43" column="24" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="24" />
+              <folding>
+                <element signature="e#48#70#0#PHP" expanded="true" />
+                <marker date="1538112511036" expanded="true" signature="1174:1371" ph="..." />
               </folding>
             </state>
           </provider>
@@ -129,85 +238,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/auction/Auction_listDispatch.php">
+        <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vfroned/bind/Bind_userDispatch.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="48" column="85" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="85" />
-              <folding>
-                <element signature="e#48#70#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/auction/Auction_updateDispatch.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-              <folding>
-                <element signature="e#48#70#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/auction/Auction_viewDispatch.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vfroned/user/User_loginDispatch.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="142" column="52" lean-forward="true" selection-start-line="142" selection-start-column="52" selection-end-line="142" selection-end-column="52" />
+            <state relative-caret-position="38">
+              <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
               <folding>
                 <element signature="e#46#68#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/common/models/AuctionInviter.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/common/models/AuctionImage.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/teacher/Teacher_qrcodeDispatch.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
-              <folding>
-                <element signature="e#48#70#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/teacher/Teacher_updateDispatch.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="35" column="44" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -217,6 +254,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>AuctionImage</find>
+      <find>$request['version']</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -225,19 +263,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/apps/api/controllers/RestController.php" />
         <option value="$PROJECT_DIR$/apps/api/dispatches/vfroned/user/User_userloginDispatch.php" />
         <option value="$PROJECT_DIR$/apps/api/dispatches/vadmin/user/User_userloginDispatch.php" />
         <option value="$PROJECT_DIR$/apps/api/config/params.php" />
         <option value="$PROJECT_DIR$/apps/api/dispatches/vadmin/configapi/ConfigApi_addDispatch.php" />
         <option value="$PROJECT_DIR$/apps/api/config/main.php" />
-        <option value="$PROJECT_DIR$/apps/common/models/redis/SalerToken.php" />
         <option value="$PROJECT_DIR$/apps/common/models/Wx.php" />
         <option value="$PROJECT_DIR$/apps/common/models/notice.php" />
         <option value="$PROJECT_DIR$/apps/common/models/Notes.php" />
         <option value="$PROJECT_DIR$/apps/common/models/Notice.php" />
         <option value="$PROJECT_DIR$/apps/api/dispatches/vadmin/teacher/Teacher_addDispatch.php" />
-        <option value="$PROJECT_DIR$/apps/api/dispatches/vadmin/auction/Auction_listDispatch.php" />
         <option value="$PROJECT_DIR$/apps/common/models/Auction.php" />
         <option value="$PROJECT_DIR$/apps/common/models/Teacher.php" />
         <option value="$PROJECT_DIR$/apps/api/dispatches/vadmin/teacher/Teacher_listDispatch.php" />
@@ -245,14 +280,33 @@
         <option value="$PROJECT_DIR$/apps/api/dispatches/vadmin/teacher/Teacher_delDispatch.php" />
         <option value="$PROJECT_DIR$/apps/api/dispatches/vadmin/auction/Auction_bindDispatch.php" />
         <option value="$PROJECT_DIR$/apps/api/dispatches/vadmin/teacher/Teacher_updateDispatch.php" />
-        <option value="$PROJECT_DIR$/apps/api/dispatches/vadmin/teacher/Teacher_qrcodeDispatch.php" />
         <option value="$PROJECT_DIR$/apps/common/models/CompanyWx.php" />
         <option value="$PROJECT_DIR$/apps/common/models/Auction_image.php" />
-        <option value="$PROJECT_DIR$/apps/api/dispatches/vadmin/auction/Auction_addDispatch.php" />
-        <option value="$PROJECT_DIR$/apps/api/dispatches/vadmin/auction/Auction_updateDispatch.php" />
         <option value="$PROJECT_DIR$/apps/api/dispatches/vadmin/auction/Auction_viewDispatch.php" />
         <option value="$PROJECT_DIR$/apps/common/models/AuctionInviter.php" />
+        <option value="$PROJECT_DIR$/apps/common/models/ProductImages.php" />
+        <option value="$PROJECT_DIR$/apps/common/models/AuctionProduct.php" />
+        <option value="$PROJECT_DIR$/apps/api/dispatches/vadmin/product/Product_listDispatch.php" />
+        <option value="$PROJECT_DIR$/apps/api/dispatches/vadmin/product/Product_addDispatch.php" />
+        <option value="$PROJECT_DIR$/apps/api/dispatches/vadmin/product/Product_delDispatch.php" />
+        <option value="$PROJECT_DIR$/apps/api/dispatches/vadmin/product/Product_viewDispatch.php" />
+        <option value="$PROJECT_DIR$/apps/api/dispatches/vadmin/product/Product_updateDispatch.php" />
+        <option value="$PROJECT_DIR$/apps/common/models/InviterSeting.php" />
+        <option value="$PROJECT_DIR$/apps/api/dispatches/vadmin/teacher/Teacher_qrcodeDispatch.php" />
+        <option value="$PROJECT_DIR$/apps/common/models/redis/QrCodeStr.php" />
+        <option value="$PROJECT_DIR$/apps/api/dispatches/vadmin/phonecode/Phonecode_getDispatch.php" />
+        <option value="$PROJECT_DIR$/apps/api/dispatches/vfroned/phonecode/Phonecode_getDispatch.php" />
+        <option value="$PROJECT_DIR$/apps/api/dispatches/vfroned/phonecode/Phonecode_getcodeDispatch.php" />
+        <option value="$PROJECT_DIR$/apps/common/models/redis/SalerToken.php" />
+        <option value="$PROJECT_DIR$/apps/api/controllers/RestController.php" />
+        <option value="$PROJECT_DIR$/apps/api/dispatches/vfroned/bind/Bind_userDispatch.php" />
+        <option value="$PROJECT_DIR$/apps/api/dispatches/vadmin/auction/Auction_listDispatch.php" />
+        <option value="$PROJECT_DIR$/apps/api/dispatches/vadmin/auction/Auction_peoplelistDispatch.php" />
+        <option value="$PROJECT_DIR$/apps/api/dispatches/vadmin/auction/Auction_addDispatch.php" />
+        <option value="$PROJECT_DIR$/apps/common/helpers/CommonHelper.php" />
         <option value="$PROJECT_DIR$/apps/api/dispatches/vfroned/user/User_loginDispatch.php" />
+        <option value="$PROJECT_DIR$/apps/api/dispatches/vfroned/auction/Auction_getlistforvDispatch.php" />
+        <option value="$PROJECT_DIR$/apps/api/dispatches/vadmin/auction/Auction_updateDispatch.php" />
       </list>
     </option>
   </component>
@@ -329,6 +383,13 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="apps" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="dispatches" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -345,7 +406,52 @@
               <item name="apps" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="dispatches" type="462c0819:PsiDirectoryNode" />
+              <item name="vadmin" type="462c0819:PsiDirectoryNode" />
+              <item name="auction" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="dispatches" type="462c0819:PsiDirectoryNode" />
+              <item name="vadmin" type="462c0819:PsiDirectoryNode" />
+              <item name="teacher" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="dispatches" type="462c0819:PsiDirectoryNode" />
               <item name="vfroned" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="dispatches" type="462c0819:PsiDirectoryNode" />
+              <item name="vfroned" type="462c0819:PsiDirectoryNode" />
+              <item name="auction" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="dispatches" type="462c0819:PsiDirectoryNode" />
+              <item name="vfroned" type="462c0819:PsiDirectoryNode" />
+              <item name="bind" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="dispatches" type="462c0819:PsiDirectoryNode" />
+              <item name="vfroned" type="462c0819:PsiDirectoryNode" />
+              <item name="phonecode" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
@@ -367,7 +473,22 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="apps" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="helpers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -386,11 +507,11 @@
       <recent name="$PROJECT_DIR$/apps/common/models" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/apps/common/models" />
-      <recent name="$PROJECT_DIR$/apps/api/dispatches/vadmin/teacher" />
-      <recent name="$PROJECT_DIR$/apps/api/dispatches/vadmin/auction" />
-      <recent name="$PROJECT_DIR$/apps/common/models/redis" />
+      <recent name="$PROJECT_DIR$/apps/api/dispatches/vfroned/auction" />
       <recent name="$PROJECT_DIR$/apps/api/dispatches/vfroned" />
+      <recent name="$PROJECT_DIR$/apps/common/models/redis" />
+      <recent name="$PROJECT_DIR$/apps/api/dispatches/vfroned/bind" />
+      <recent name="$PROJECT_DIR$/apps/common/models" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -415,15 +536,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1537423976074</updated>
-      <workItem from="1537423977521" duration="29694000" />
+      <workItem from="1537423977521" duration="49693000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29694000" />
+    <option name="totallyTimeSpent" value="49693000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24959612" />
@@ -474,154 +596,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/apps/api/config/params.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="33" column="60" selection-start-line="33" selection-start-column="60" selection-end-line="33" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/user/User_userloginDispatch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="13" column="41" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/api/controllers/RestController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="43" column="43" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="43" />
-          <folding>
-            <element signature="e#35#43#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/common/models/Role.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/common/models/Province.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/common/models/Menu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="46" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/api/config/params-local.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/api/config/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/abei2017/yii2-wx/src/Application.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/configapi/ConfigApi_addDispatch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="31" column="42" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/common/models/redis/WxAccessToken.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/common/models/redis/AdminToken.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/api/helpers/ApiHelper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="113" column="27" lean-forward="true" selection-start-line="113" selection-start-column="27" selection-end-line="113" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/common/models/redis/SalerToken.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/api/config/main-local.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/common/models/City.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/common/models/Admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="54" column="32" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/role/Role_addDispatch.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/common/Common_updateDispatch.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/common/Common_delDispatch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="25" column="1" selection-start-line="25" selection-end-line="25" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/common/models/Notice.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="22" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/configapi/ConfigApi_errlistDispatch.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/role/Role_updateDispatch.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/role/Role_listDispatch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="32" column="51" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/admin/Admin_listDispatch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="37" column="30" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/configapi/ConfigApi_listDispatch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="27" />
-          <folding>
-            <element signature="e#51#73#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/common/models/Auction.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -629,58 +603,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/common/models/Wx.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="48" column="37" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/common/models/Teacher.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="40" column="35" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/teacher/Teacher_listDispatch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="38" column="55" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="55" />
-          <folding>
-            <element signature="e#48#70#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/teacher/Teacher_delDispatch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/teacher/Teacher_addDispatch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="37" column="27" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="27" />
-          <folding>
-            <element signature="e#48#70#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/common/models/Notes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/login/LoginDispatch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-207">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -696,10 +622,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/common/models/ConfigApiDispatch.php">
+    <entry file="file://$PROJECT_DIR$/apps/common/models/AuctionImage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="38" column="80" selection-start-line="38" selection-start-column="76" selection-end-line="38" selection-end-column="80" />
+        <state relative-caret-position="315">
+          <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/common/models/ProductImages.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/teacher/Teacher_addDispatch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="33" column="33" lean-forward="true" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+          <folding>
+            <element signature="e#48#70#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/menu/Menu_initDispatch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="631">
+          <caret line="72" column="9" selection-start-line="67" selection-start-column="8" selection-end-line="72" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/auction/Auction_viewDispatch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="47" column="28" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="28" />
+          <folding>
+            <element signature="e#49#71#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/product/Product_addDispatch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+          <folding>
+            <element signature="e#48#70#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/product/Product_viewDispatch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+          <folding>
+            <element signature="e#48#70#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/product/Product_updateDispatch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-83">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+          <folding>
+            <element signature="e#48#70#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/product/Product_listDispatch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+          <folding>
+            <element signature="e#48#70#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/db/ActiveRecord.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="665" column="20" selection-start-line="665" selection-start-column="20" selection-end-line="665" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/product/Product_delDispatch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="45" column="55" selection-start-line="45" selection-start-column="55" selection-end-line="45" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/common/models/License.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/common/models/InviterSeting.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="44" column="30" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -710,22 +734,178 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/auction/Auction_addDispatch.php">
+    <entry file="file://$PROJECT_DIR$/apps/common/models/Wx.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="60" column="41" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
+        <state relative-caret-position="525">
+          <caret line="48" column="37" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/common/models/Teacher.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/login/LoginDispatch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="52" column="72" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="72" />
+          <folding>
+            <element signature="e#46#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/login/Change_passwordDispatch.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/register/RegisterDispatch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/common/models/AuctionProduct.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="48" column="38" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/common/models/ConfigApiVersion.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/common/models/ConfigApiError.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/common/models/ConfigApiDispatch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="38" column="80" selection-start-line="38" selection-start-column="76" selection-end-line="38" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/common/models/AuctionInviter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/common/models/redis/WxAccessToken.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/common/models/redis/WxJsapiTicket.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/common/models/redis/QrCodeStr.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/common/models/redis/YtxCode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/phonecode/Phonecode_getDispatch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="43" column="45" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/common/models/redis/AdminToken.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/common/models/redis/SalerToken.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/api/controllers/RestController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="151" column="28" selection-start-line="151" selection-start-column="28" selection-end-line="151" selection-end-column="28" />
+          <folding>
+            <element signature="e#35#43#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/auction/Auction_listDispatch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="46" column="42" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="42" />
           <folding>
             <element signature="e#48#70#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/auction/Auction_bindDispatch.php">
+    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/teacher/Teacher_updateDispatch.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        <state relative-caret-position="465">
+          <caret line="35" column="37" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/common/helpers/CommonHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="65" column="13" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vfroned/phonecode/Phonecode_getcodeDispatch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/teacher/Teacher_delDispatch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/teacher/Teacher_listDispatch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
           <folding>
             <element signature="e#48#70#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vfroned/bind/Bind_userDispatch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding>
+            <element signature="e#46#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vfroned/user/User_loginDispatch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-896">
+          <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+          <folding>
+            <element signature="e#46#68#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -737,10 +917,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/auction/Auction_listDispatch.php">
+    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/auction/Auction_bindDispatch.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="48" column="85" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="85" />
+        <state relative-caret-position="285">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+          <folding>
+            <element signature="e#48#70#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/auction/Auction_addDispatch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="49" column="27" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="27" />
           <folding>
             <element signature="e#48#70#0#PHP" expanded="true" />
           </folding>
@@ -749,58 +939,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/auction/Auction_updateDispatch.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        <state relative-caret-position="399">
+          <caret line="68" column="41" selection-start-line="68" selection-start-column="41" selection-end-line="68" selection-end-column="41" />
           <folding>
             <element signature="e#48#70#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/auction/Auction_viewDispatch.php">
+    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/auction/Auction_peoplelistDispatch.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/common/models/AuctionInviter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/common/models/AuctionImage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/teacher/Teacher_updateDispatch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="35" column="44" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="44" />
+        <state relative-caret-position="406">
+          <caret line="43" column="24" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="24" />
+          <folding>
+            <element signature="e#48#70#0#PHP" expanded="true" />
+            <marker date="1538112511036" expanded="true" signature="1174:1371" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vadmin/teacher/Teacher_qrcodeDispatch.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+        <state relative-caret-position="615">
+          <caret line="41" column="46" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
           <folding>
             <element signature="e#48#70#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vfroned/user/User_loginDispatch.php">
+    <entry file="file://$PROJECT_DIR$/apps/api/dispatches/vfroned/auction/Auction_getlistforvDispatch.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="142" column="52" lean-forward="true" selection-start-line="142" selection-start-column="52" selection-end-line="142" selection-end-column="52" />
+        <state relative-caret-position="414">
+          <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
           <folding>
-            <element signature="e#46#68#0#PHP" expanded="true" />
+            <element signature="e#49#71#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

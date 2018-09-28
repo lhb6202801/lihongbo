@@ -42,6 +42,7 @@ class Auction_addDispatch extends Dispatch
         $auction->biddersTicket = $params['biddersTicket'];
         $auction->watchTicket = $params['watchTicket'];
         $auction->teacherId = $params['teacherId'];
+
         $auction->state = 1;
 
         //拍卖会公告

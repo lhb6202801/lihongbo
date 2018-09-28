@@ -47,14 +47,14 @@ class Auction_updateDispatch extends Dispatch
         $auction->teacherId = $params['teacherId'];
         $auction->save(false);
         //拍卖会公告
-        $notice = Notice::find()->where(['id'=>$auction->noticeId]);
+        $notice = Notice::find()->where(['id'=>$auction->noticeId])->one();
         if(!is_null($notice)){
             $notice->noticeName = $params['noticetitle'];
             $notice->content = urldecode($params['noticecontent']);
             $notice->save(false);
         }
         //拍卖会须知
-        $notes = Notes::find()->where(['id'=>$auction->notesId]);
+        $notes = Notes::find()->where(['id'=>$auction->notesId])->one();
         if(!is_null($notes)){
             $notes->title = $params['title'];
             $notes->content = $params['content'];

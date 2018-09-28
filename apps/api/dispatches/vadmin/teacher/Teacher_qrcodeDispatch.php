@@ -3,6 +3,7 @@ namespace api\dispatches\vadmin\teacher;
 
 use api\base\Dispatch;
 
+use common\models\redis\QrCodeStr;
 use common\models\Teacher;
 use abei2017\wx\Application;
 use Yii;
@@ -39,8 +40,17 @@ class Teacher_qrcodeDispatch extends Dispatch
         $app = new Application(['conf'=>Yii::$app->params['wx']['mini']]);
 
         $qrcode = $app->driver("mini.qrcode");
+        $qrcodestr = substr(md5(microtime(true)), 0, 6);
         //参数
-        $scene = 'iy=ter&yid='.$params['id'];
+        $scene = 'iy=tr&yid='.$params['id'].'&s='.$qrcodestr;
+        //保存唯一
+        $qstr = new QrCodeStr();
+        $qstr->str = $qrcodestr;
+        $qstr->insert();
+        return $this->successReturn([
+            'msg' => '生产成功',
+            'images' => $scene
+        ]);
         //页面
         $page = 'pages/index/index';
         $qrcodeiamge = $qrcode->unLimit($scene,$page,$extra = []);

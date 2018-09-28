@@ -51,6 +51,12 @@ class User_loginDispatch extends Dispatch
         $userinfo = Wx::find()->where(['wx_id'=>$openid])->one();
         if(is_null($userinfo)){
             //新用户
+//            校验是否是二维码推荐
+//            校验二维码是否有效
+//            $qr = QrCodeStr::find()->where(['str'=>$s])->one();
+//            if(is_null($qr)){
+//                return $this->errorReturn(1018);
+//            }
             $userinfo = new Wx();
             $userinfo->nickname = $nickname;
             $userinfo->avatar = $avatarurl;
@@ -65,31 +71,40 @@ class User_loginDispatch extends Dispatch
         if (empty($tokenClass)) {
             return $this->errorReturn(1005);
         }
-        $salertoken = $tokenClass::find()->where(['id'=>$userinfo->id])->one();
+        $salertoken = $tokenClass::find()->where(['user_id'=>$userinfo->id])->one();
         if(!is_null($salertoken)){
             $salertoken->delete();
         }
         $salertoken =  new $tokenClass;
-        $salertoken->id = $userinfo->id;
+        $salertoken->user_id = $userinfo->id;
         $salertoken->nickname = $userinfo->nickname;
         $salertoken->sex = $userinfo->sex;
         $salertoken->session_key = $session_key;
         $salertoken->created_at = time();
         $salertoken->state = time();
         $salertoken->avatar = $userinfo->avatar = $avatarurl;
-        $salertoken->access_token = Yii::$app->security->generateRandomString();
+        $salertoken->token = Yii::$app->security->generateRandomString();
         $salertoken->insert();
 
         //身份处理
         //竞拍者 - 拍卖师 - 围观人 - 委托人
         $identity = $params['iy'];
         $identityid = $params['yid'];
+        $s = $params['s'];
         if(isset($identity)){
+            //校验二维码是否有效
+            //$qr = QrCodeStr::find()->where(['str'=>$s])->one();
+            //if(is_null($qr)){
+            //    return $this->errorReturn(1015);
+            //}
             if($identity == 'tr'){
                 //拍卖师  teacher
                 //拍卖师ID $identityid
                 //关联拍卖师
                 $teacher = Teacher::find()->where(['id'=>$identityid])->one();
+                if(is_null($teacher)){
+                    return $this->errorReturn(1012);
+                }
                 $teacher->wx_id = $userinfo->id;
                 $teacher->save(false);
             }else if($identity == 'br'){
@@ -101,18 +116,24 @@ class User_loginDispatch extends Dispatch
                     return $this->errorReturn(1011);
                 }
                 // 1 绑定 企业邀请微信关系表
-                $companywx = new CompanyWx();
-                $companywx->companyId = $auction->companyId;
-                $companywx->wxId = $userinfo->id;
-                $companywx->created_at = time();
-                $companywx->save(false);
+                $companywx = CompanyWx::find()->where(['companyId'=>$auction->companyId,'wxId'=>$userinfo->id])->one();
+                if(is_null($companywx)){
+                    $companywx = new CompanyWx();
+                    $companywx->companyId = $auction->companyId;
+                    $companywx->wxId = $userinfo->id;
+                    $companywx->created_at = time();
+                    $companywx->save(false);
+                }
                 // 2 绑定 拍卖会邀请表
-                $auctioninviter = new AuctionInviter();
-                $auctioninviter->companyId = $auction->companyId;
-                $auctioninviter->wxId = $userinfo->id;
-                $auctioninviter->auctionId = $auction->id;
-                $auctioninviter->type = 0;
-                $auctioninviter->auctionNumber = substr(strval(time()), -6);
+                $auctioninviter = AuctionInviter::find()->where(['companyId'=>$auction->companyId,'auctionId'=>$auction->id,'wxId'=>$userinfo->id])->one();
+                if(is_null($auctioninviter)){
+                    $auctioninviter = new AuctionInviter();
+                    $auctioninviter->companyId = $auction->companyId;
+                    $auctioninviter->wxId = $userinfo->id;
+                    $auctioninviter->auctionId = $auction->id;
+                    $auctioninviter->type = 0;
+                    $auctioninviter->auctionNumber = intval($userinfo->id)+intval($auction->id)+10000;
+                }
             }else if($identity == 'or'){
                 //围观者 onlookers
                 //拍卖会ID $identityid
@@ -122,18 +143,24 @@ class User_loginDispatch extends Dispatch
                     return $this->errorReturn(1011);
                 }
                 // 1 绑定 企业邀请微信关系表
-                $companywx = new CompanyWx();
-                $companywx->companyId = $auction->companyId;
-                $companywx->wxId = $userinfo->id;
-                $companywx->created_at = time();
-                $companywx->save(false);
+                $companywx = CompanyWx::find()->where(['companyId'=>$auction->companyId])->one();
+                if(is_null($companywx)){
+                    $companywx = new CompanyWx();
+                    $companywx->companyId = $auction->companyId;
+                    $companywx->wxId = $userinfo->id;
+                    $companywx->created_at = time();
+                    $companywx->save(false);
+                }
                 // 2 绑定 拍卖会邀请表
-                $auctioninviter = new AuctionInviter();
-                $auctioninviter->companyId = $auction->companyId;
-                $auctioninviter->wxId = $userinfo->id;
-                $auctioninviter->auctionId = $auction->id;
-                $auctioninviter->type = 1;
-                $auctioninviter->auctionNumber = substr(strval(time()), -6);
+                $auctioninviter = AuctionInviter::find()->where(['companyId'=>$auction->companyId,'auctionId'=>$auction->id,'wxId'=>$userinfo->id])->one();
+                if(is_null($auctioninviter)){
+                    $auctioninviter = new AuctionInviter();
+                    $auctioninviter->companyId = $auction->companyId;
+                    $auctioninviter->wxId = $userinfo->id;
+                    $auctioninviter->auctionId = $auction->id;
+                    $auctioninviter->type = 0;
+                    $auctioninviter->auctionNumber = intval($userinfo->id)+intval($auction->id)+10000;
+                }
             }else if($identity == 'ct'){
                 //委托人 client
                 //拍卖会ID $identityid
@@ -143,24 +170,51 @@ class User_loginDispatch extends Dispatch
                     return $this->errorReturn(1011);
                 }
                 // 1 绑定 企业邀请微信关系表
-                $companywx = new CompanyWx();
-                $companywx->companyId = $auction->companyId;
-                $companywx->wxId = $userinfo->id;
-                $companywx->created_at = time();
-                $companywx->save(false);
+                $companywx = CompanyWx::find()->where(['companyId'=>$auction->companyId])->one();
+                if(is_null($companywx)){
+                    $companywx = new CompanyWx();
+                    $companywx->companyId = $auction->companyId;
+                    $companywx->wxId = $userinfo->id;
+                    $companywx->created_at = time();
+                    $companywx->save(false);
+                }
                 // 2 绑定 拍卖会邀请表
-                $auctioninviter = new AuctionInviter();
-                $auctioninviter->companyId = $auction->companyId;
-                $auctioninviter->wxId = $userinfo->id;
-                $auctioninviter->auctionId = $auction->id;
-                $auctioninviter->type = 2;
-                $auctioninviter->auctionNumber = substr(strval(time()), -6);
+                $auctioninviter = AuctionInviter::find()->where(['companyId'=>$auction->companyId,'auctionId'=>$auction->id,'wxId'=>$userinfo->id])->one();
+                if(is_null($auctioninviter)){
+                    $auctioninviter = new AuctionInviter();
+                    $auctioninviter->companyId = $auction->companyId;
+                    $auctioninviter->wxId = $userinfo->id;
+                    $auctioninviter->auctionId = $auction->id;
+                    $auctioninviter->type = 0;
+                    $auctioninviter->auctionNumber = intval($userinfo->id)+intval($auction->id)+10000;
+                }
+            }
+            //设置二维码失效
+            //$qr->delete();
+        }
+        //查询身份
+        $isiv = false;
+        $auction = AuctionInviter::find()->one();
+        if(!is_null($auction)){
+            $isiv = true;
+        }else{
+            $teacher = Teacher::find()->where(['wx_id'=>$userinfo->id])->one();
+            if(!is_null($teacher)){
+                $isiv = true;
+            }
+        }
+        //查询是否绑定
+        $isv = false;
+        $wxuserinfo = Wx::find()->where(['id'=>$userinfo->id])->one();
+        if(!is_null($wxuserinfo)){
+            if($wxuserinfo->phone !="" && $wxuserinfo->phone!=null){
+                $isv = true;
             }
         }
         return $this->successReturn([
-            //'userinfo' => $userinfo,
-            'token' =>$salertoken->access_token,
-            'iy'=>$identity
+            'token' =>$salertoken->token,
+            'isiv'=>$isiv,
+            'isv'=>$isv
         ]);
     }
 }
