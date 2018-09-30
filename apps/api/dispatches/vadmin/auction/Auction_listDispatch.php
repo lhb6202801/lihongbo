@@ -39,7 +39,7 @@ class Auction_listDispatch extends Dispatch
         $limit = intval($params['limit']);
         $start = $start * $limit;
 
-        $sql = "select image.images as images,a.id as id,a.name as name,a.begindate as begindate,a.biddersTicket as biddersTicket,a.watchTicket as watchTicket,notes.title as title,notes.content as content,notice.noticeName as noticeName,notice.content as noticecontent,admin.companyName as companyName from t_auction as a left join t_auction_image as image on image.auctionId = a.id  left join t_admin as admin on admin.id = a.companyID left join t_notes as notes on notes.id = a.notesId left join t_notice as notice on notice.id = a.noticeId where a.companyID = ".$params['user_id']." order by a.id desc limit ".$limit." offset ".$start;
+        $sql = "select a.state,image.images as images,a.id as id,a.name as name,a.begindate as begindate,a.biddersTicket as biddersTicket,a.watchTicket as watchTicket,notes.title as title,notes.content as content,notice.noticeName as noticeName,notice.content as noticecontent,admin.companyName as companyName from t_auction as a left join t_auction_image as image on image.auctionId = a.id  left join t_admin as admin on admin.id = a.companyID left join t_notes as notes on notes.id = a.notesId left join t_notice as notice on notice.id = a.noticeId where a.companyID = ".$params['user_id']." and a.state=1 order by a.id desc limit ".$limit." offset ".$start;
         //$admins = Admin::find()->select('id,username,state,linkman,linkphone,companyName')->limit($limit)->offset($start)->orderBy('created_at DESC')->asArray()->all();
         $connection = Yii::$app->db;
         $command = $connection->createCommand($sql);

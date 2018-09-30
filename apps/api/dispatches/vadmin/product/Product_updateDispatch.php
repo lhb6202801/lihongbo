@@ -61,9 +61,8 @@ class Product_updateDispatch extends Dispatch
                 unset($valueinfo);
             }
             $save = Yii::$app->db->createCommand()->batchInsert(ProductImages::tableName(), $columnarray, $valuearray)->execute();
-            if($save){
-                return $this->successReturn(['msg' => '修改成功']);
-            }
+            return $this->successReturn(['msg' => '修改成功']);
+
         }
         return $this->errorReturn(1007);
     }

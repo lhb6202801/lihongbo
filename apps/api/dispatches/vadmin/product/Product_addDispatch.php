@@ -40,6 +40,7 @@ class Product_addDispatch extends Dispatch
         $auctionproduct->auctionId = $params['auctionId'];
         $auctionproduct->introduce = urldecode($params['introduce']);
         $auctionproduct->companyId = $params['user_id'];
+        $auctionproduct->state = 1;
         if($auctionproduct->save(false)){
             //添加图片
             $images = $params['images'];
@@ -52,9 +53,7 @@ class Product_addDispatch extends Dispatch
                 unset($valueinfo);
             }
             $save = Yii::$app->db->createCommand()->batchInsert(ProductImages::tableName(), $columnarray, $valuearray)->execute();
-            if($save){
-                return $this->successReturn(['msg' => '添加成功']);
-            }
+            return $this->successReturn(['msg' => '添加成功']);
         }
         return $this->errorReturn(1007);
     }

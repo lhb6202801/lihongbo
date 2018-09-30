@@ -51,12 +51,16 @@ class User_loginDispatch extends Dispatch
         $userinfo = Wx::find()->where(['wx_id'=>$openid])->one();
         if(is_null($userinfo)){
             //新用户
-//            校验是否是二维码推荐
-//            校验二维码是否有效
-//            $qr = QrCodeStr::find()->where(['str'=>$s])->one();
-//            if(is_null($qr)){
-//                return $this->errorReturn(1018);
-//            }
+            $identity = $params['iy'];
+            $s = $params['s'];
+            if(isset($identity)){
+                $qr = QrCodeStr::find()->where(['str'=>$s])->one();
+                if(is_null($qr)){
+                    return $this->errorReturn(1015);
+                }
+            }else{
+                return $this->errorReturn(1018);
+            }
             $userinfo = new Wx();
             $userinfo->nickname = $nickname;
             $userinfo->avatar = $avatarurl;
@@ -65,6 +69,9 @@ class User_loginDispatch extends Dispatch
             $userinfo->created_at = time();
             $userinfo->wx_id = $openid;
             $userinfo->save(false);
+        }
+        if(is_null($userinfo)){
+            return $this->errorReturn(1018);
         }
         //缓存信息
         $tokenClass = ApiHelper::getTokenClass($this->version);
@@ -86,6 +93,9 @@ class User_loginDispatch extends Dispatch
         $salertoken->token = Yii::$app->security->generateRandomString();
         $salertoken->insert();
 
+
+
+
         //身份处理
         //竞拍者 - 拍卖师 - 围观人 - 委托人
         $identity = $params['iy'];
@@ -95,7 +105,9 @@ class User_loginDispatch extends Dispatch
             //校验二维码是否有效
             //$qr = QrCodeStr::find()->where(['str'=>$s])->one();
             //if(is_null($qr)){
-            //    return $this->errorReturn(1015);
+            //  if(is_null($userinfo)){
+            //     return $this->errorReturn(1015);
+            //  }
             //}
             if($identity == 'tr'){
                 //拍卖师  teacher
@@ -194,7 +206,7 @@ class User_loginDispatch extends Dispatch
         }
         //查询身份
         $isiv = false;
-        $auction = AuctionInviter::find()->one();
+        $auction = AuctionInviter::find(['wxId'=>$userinfo->id])->one();
         if(!is_null($auction)){
             $isiv = true;
         }else{

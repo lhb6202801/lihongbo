@@ -47,7 +47,9 @@ class Product_viewDispatch extends Dispatch
                 unset($images);
             }
         }
-
+        if(count($imagesinfo)<=0){
+            $imagesinfo="";
+        }
         return $this->successReturn([
             'model' => $auctionproduct,
             'image' => $imagesinfo

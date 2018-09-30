@@ -1,8 +1,14 @@
 <?php
 
 namespace common\helpers;
+
 use common\components\YtxRestSdk;
+use common\models\Auction;
+use common\models\AuctionInviter;
+use common\models\Pay;
+use common\models\Teacher;
 use Yii;
+
 
 /**
  * Class CommonHelper
@@ -52,7 +58,7 @@ class CommonHelper
      * @param integer $len 随机数字长度
      * @return string
      */
-    public function randString($len = 6)
+    public static function randString($len = 6)
     {
         $chars = str_repeat('0123456789', 3);
         // 位数过长重复字符串一定次数
@@ -62,12 +68,13 @@ class CommonHelper
         return $str;
 
     }
+
     /**
      * 获取用户身份
      */
-    public function getAuctionType($vtype)
+    public static function getAuctionType($vtype)
     {
-        switch ($vtype){
+        switch ($vtype) {
             case 0:
                 $vtype = 'br';
                 break;
@@ -82,7 +89,78 @@ class CommonHelper
                 break;
         }
         return $vtype;
+    }
+    /**
+     * 二维数组去重
+     *
+     */
+    //$arr->传入数组   $key->判断的key值
+    public static function array_unset_tt($arr, $key)
+    {
+        //建立一个目标数组
+        $res = array();
+        foreach ($arr as $value) {
+            //查看有没有重复项
+            if (isset($res[$value[$key]])) {
+                unset($value[$key]);
+            } else {
 
+                $res[$value[$key]] = $value;
+            }
+        }
+        return $res;
+    }
+    /***
+     * 根据用户id,会场id,获取用户身份
+     */
+    public static function getIy($uid,$aid)
+    {
+        $auction = Auction::find()->where(['id' => $aid, 'state' => 1])->one();
+        if (!is_null($auction)) {
+            $auctioninviter = AuctionInviter::find()->where(['wxId' => $uid])->one();
+            if (is_null($auctioninviter)) {
+                $teacher = Teacher::find()->where(['id' => $auction->teacherId])->one();
+                if (!is_null($teacher)) {
+                    if ($teacher->wx_id == $uid) {
+                        $iy = 3;
+                    }
+                }
+            }else{
+                $iy = $auctioninviter->type;
+            }
+        }
+        if($iy!=''){
+            return CommonHelper::getAuctionType($iy);
+        }
+        return '';
+    }
+    /***
+     * 根据用户id,会场id,身份,获取支付状态
+     * return bool
+     */
+    public static function getPayState($uid,$aid,$iy)
+    {
+        $p = false;
+        switch ($iy){
+            case 'ct':
+                $p = true;
+                break;
+            case 'tr':
+                $p = true;
+                break;
+            default:
+                $p = false;
+        }
+        if(!$p){
+            $pay = Pay::find()->where(['wxId'=>$uid,'auctionId'=>$aid])->one();
+            if(is_null($pay)){
+                $p =  false;
+            }
+            if($pay->state == 1){
+                $p =  true;
+            }
+        }
+        return $p;
     }
 }
 

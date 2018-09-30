@@ -26,7 +26,7 @@ class AuctionProduct extends \yii\db\ActiveRecord
     {
         return [
             [['name'], 'string', 'max' => 80],
-            [['beginValue','stepValue'], 'safe'],
+            [['beginValue','stepValue','state',], 'safe'],
             [['freeOffer','timeLimitOffer','auctionId','companyId'], 'integer','max' => 13],
             [['introduce'],'string', 'max' => 8000]
         ];
